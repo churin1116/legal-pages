@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー - Audio Box</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #1a1a1a;
+      --primary: #2dd4bf;
+      --text: #e5e5e5;
+      --text-secondary: #a3a3a3;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--surface);
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+
+    .app-name {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+
+    ul {
+      color: var(--text-secondary);
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      background-color: var(--surface);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 32px;
+    }
+
+    .contact a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .update-date {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--surface);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-link">&larr; 戻る</a>
+
+  <header>
+    <h1>プライバシーポリシー</h1>
+    <p class="app-name">Audio Box</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>はじめに</h2>
+      <p>Audio Box（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。本プライバシーポリシーでは、本アプリが収集する情報とその利用方法について説明します。</p>
+    </section>
+
+    <section>
+      <h2>収集する情報</h2>
+      <p>本アプリでは、以下の情報を収集する場合があります：</p>
+      <ul>
+        <li><strong>アカウント情報：</strong>ユーザー登録時にメールアドレスを収集します（任意）</li>
+        <li><strong>利用データ：</strong>再生履歴、お気に入り、プレイリストなどの利用状況</li>
+        <li><strong>デバイス情報：</strong>アプリの動作改善のため、OSバージョンやデバイスの種類を収集する場合があります</li>
+      </ul>
+      <p>本アプリは、位置情報、連絡先、写真へのアクセスは行いません。</p>
+    </section>
+
+    <section>
+      <h2>情報の利用目的</h2>
+      <p>収集した情報は、以下の目的で利用します：</p>
+      <ul>
+        <li><strong>サービスの提供：</strong>音楽再生、お気に入り保存などの機能提供</li>
+        <li><strong>サービスの改善：</strong>アプリの品質向上とユーザー体験の改善</li>
+        <li><strong>アカウント管理：</strong>ログインおよびデータ同期</li>
+        <li><strong>サポート対応：</strong>お問い合わせへの対応</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>情報の共有</h2>
+      <p>本アプリは、以下の場合を除き、ユーザーの個人情報を第三者と共有しません：</p>
+      <ul>
+        <li>ユーザーの同意がある場合</li>
+        <li>法令に基づく開示要請があった場合</li>
+        <li>サービス提供に必要な業務委託先（データベースサービス等）</li>
+      </ul>
+      <p>業務委託先には適切な情報管理を義務付けています。</p>
+    </section>
+
+    <section>
+      <h2>データの保存</h2>
+      <p>ユーザーデータは以下の方法で保存されます：</p>
+      <ul>
+        <li><strong>クラウドストレージ：</strong>Supabase（AWS上で運用）にて安全に保存</li>
+        <li><strong>音声ファイル：</strong>Cloudflare R2にて配信</li>
+        <li><strong>ローカルデータ：</strong>一部のデータはデバイス上にキャッシュされます</li>
+      </ul>
+      <p>データは適切なセキュリティ対策を講じて保護されています。</p>
+    </section>
+
+    <section>
+      <h2>ユーザーの権利</h2>
+      <p>ユーザーは以下の権利を有します：</p>
+      <ul>
+        <li><strong>アクセス権：</strong>保存されている個人情報の確認</li>
+        <li><strong>訂正権：</strong>不正確な情報の修正</li>
+        <li><strong>削除権：</strong>アカウントおよびデータの削除</li>
+        <li><strong>同意撤回：</strong>データ収集への同意の撤回</li>
+      </ul>
+      <p>これらの権利行使については、アプリ内の設定またはお問い合わせよりご連絡ください。</p>
+    </section>
+
+    <section>
+      <h2>子どものプライバシー</h2>
+      <p>本アプリは、13歳未満の子どもから意図的に個人情報を収集しません。13歳未満のユーザーが個人情報を提供したことが判明した場合、速やかに当該情報を削除します。</p>
+    </section>
+
+    <section>
+      <h2>Cookieとトラッキング</h2>
+      <p>本アプリはCookieを使用しません。また、広告目的のトラッキングは行いません。アプリの動作改善のため、匿名の利用統計を収集する場合がありますが、個人を特定することはありません。</p>
+    </section>
+
+    <section>
+      <h2>セキュリティ</h2>
+      <p>本アプリは、ユーザーの情報を保護するため、業界標準のセキュリティ対策を実施しています。ただし、インターネット上での完全なセキュリティを保証することはできません。</p>
+    </section>
+
+    <section>
+      <h2>ポリシーの変更</h2>
+      <p>本プライバシーポリシーは、必要に応じて更新される場合があります。重要な変更がある場合は、アプリ内で通知します。</p>
+    </section>
+
+    <section class="contact">
+      <h2>お問い合わせ</h2>
+      <p>本プライバシーポリシーに関するご質問やご要望は、以下までお問い合わせください：</p>
+      <p>メール: <a href="mailto:support@audiobox.app">support@audiobox.app</a></p>
+    </section>
+  </main>
+
+  <p class="update-date">最終更新日: 2026年2月18日</p>
+</body>
+</html>
