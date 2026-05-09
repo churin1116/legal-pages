@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Chameleon</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #1a1a1a;
+      --primary: #2dd4bf;
+      --text: #e5e5e5;
+      --text-secondary: #a3a3a3;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--surface);
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+
+    .app-name {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    ul {
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background-color: var(--surface);
+      border-left: 3px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+    }
+
+    .lang-switch {
+      text-align: right;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .lang-switch a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .update-date {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--surface);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background-color: var(--surface);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      color: var(--primary);
+    }
+
+    a {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <a href="../index.html" class="back-link">&larr; Back</a>
+  <div class="lang-switch"><a href="#en">English</a> &nbsp;|&nbsp; <a href="#ja">日本語</a></div>
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="app-name">Chameleon — Chrome Extension</p>
+  </header>
+
+  <main>
+    <section id="en">
+      <h2>Summary</h2>
+      <div class="highlight-box">
+        <p><strong>Chameleon does not collect, transmit, sell, or share any personal data.</strong> The extension runs entirely on your device. The only data it stores is a single string — the name of the theme you selected — saved locally via <code>chrome.storage.local</code>.</p>
+      </div>
+
+      <h2>What the extension does</h2>
+      <p>Chameleon applies a user-selected color theme to web pages that adopt the Chameleon theme contract (a small, open CSS-variable spec). The extension's job is:</p>
+      <ul>
+        <li>Read the theme name you picked from local storage.</li>
+        <li>Inject a tiny script into a Chameleon-aware page so it can apply that theme.</li>
+        <li>Show a toolbar badge ("ON") on tabs where Chameleon is active.</li>
+      </ul>
+
+      <h2>Data we store</h2>
+      <h3>chrome.storage.local</h3>
+      <ul>
+        <li><code>chameleon-theme</code> — a string (e.g. <code>"midnight"</code>, <code>"warm"</code>) identifying the preset you chose.</li>
+      </ul>
+      <p>This value never leaves your browser. It is not associated with any user identifier, account, or analytics service. You can clear it at any time by removing the extension from <code>chrome://extensions</code>.</p>
+
+      <h2>Data we do NOT collect</h2>
+      <ul>
+        <li>No personally identifiable information (PII)</li>
+        <li>No browsing history, URLs, page content, or DOM snapshots</li>
+        <li>No analytics, telemetry, or crash reports</li>
+        <li>No cookies set by the extension</li>
+        <li>No advertising identifiers</li>
+        <li>No location, contacts, microphone, camera, or device sensors</li>
+      </ul>
+
+      <h2>Network activity</h2>
+      <p>The extension itself makes no network requests. It does not contact any server operated by us or any third party. All bundled assets (icons, scripts, styles) ship with the extension.</p>
+      <p>Note: the Chameleon contract's CSS/JS files are normally referenced by web pages directly from <code>https://churin1116.github.io/html-chameleon/</code>. Those requests are made by the web page itself in your browser — the extension does not initiate or proxy them.</p>
+
+      <h2>Permissions and why</h2>
+      <ul>
+        <li><strong><code>storage</code></strong> — to remember the theme you selected so it persists across tabs and browser restarts.</li>
+        <li><strong><code>activeTab</code></strong> — to apply the theme immediately to the current tab when you click an option in the popup.</li>
+        <li><strong><code>scripting</code></strong> — to inject the theme-applying script into a Chameleon-aware page.</li>
+        <li><strong><code>host_permissions: &lt;all_urls&gt;</code></strong> — Chameleon-compatible HTML pages can be hosted on any domain (a personal site, a docs page, a local file). The extension needs to be able to detect and theme such pages wherever they appear. The extension only acts on pages that declare a Chameleon signal (<code>&lt;meta name="chameleon"&gt;</code>, the Chameleon stylesheet link, or <code>&lt;html data-chameleon&gt;</code>); on every other page, it does nothing.</li>
+      </ul>
+
+      <h2>Remote code</h2>
+      <p>Chameleon does not load, evaluate, or fetch remote code at runtime. All JavaScript executed by the extension is bundled in the package distributed via the Chrome Web Store.</p>
+
+      <h2>Children</h2>
+      <p>The extension is not directed to children and collects no personal data from any user, including children.</p>
+
+      <h2>Changes</h2>
+      <p>If we ever change the privacy practices of the extension, we will update this page and bump the date below. Material changes that affect what data is handled will also be reflected in the Chrome Web Store listing.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a href="mailto:nakabayashi991116@gmail.com">nakabayashi991116@gmail.com</a></p>
+      <p>Source code: <a href="https://github.com/churin1116/html-chameleon">github.com/churin1116/html-chameleon</a></p>
+    </section>
+
+    <hr style="border:none;border-top:1px solid var(--surface);margin:48px 0;">
+
+    <section id="ja">
+      <h2>概要</h2>
+      <div class="highlight-box">
+        <p><strong>Chameleon は個人データを一切収集・送信・販売・共有しません。</strong>すべての処理はあなたのブラウザ内で完結します。拡張機能が保存する唯一のデータは、あなたが選択したテーマ名（文字列）のみで、<code>chrome.storage.local</code> にローカル保存されます。</p>
+      </div>
+
+      <h2>本拡張の動作</h2>
+      <p>Chameleon は Chameleon テーマ規約（オープンな CSS 変数スペック）を採用したウェブページに対し、ユーザーが選択したカラーテーマを適用します。具体的には:</p>
+      <ul>
+        <li>ローカルストレージからユーザーが選んだテーマ名を読み取る</li>
+        <li>Chameleon 対応ページに小さなスクリプトを注入し、テーマを適用する</li>
+        <li>Chameleon が有効なタブにツールバーバッジ「ON」を表示する</li>
+      </ul>
+
+      <h2>保存するデータ</h2>
+      <h3>chrome.storage.local</h3>
+      <ul>
+        <li><code>chameleon-theme</code> — 選択したプリセット名を表す文字列（例: <code>"midnight"</code>, <code>"warm"</code>）</li>
+      </ul>
+      <p>この値はブラウザ外に出ることはありません。ユーザー識別子、アカウント、分析サービス等とは一切紐付きません。<code>chrome://extensions</code> から拡張機能を削除すれば即座に消去されます。</p>
+
+      <h2>収集しないデータ</h2>
+      <ul>
+        <li>個人を特定可能な情報（PII）</li>
+        <li>閲覧履歴、URL、ページコンテンツ、DOM スナップショット</li>
+        <li>アナリティクス、テレメトリ、クラッシュレポート</li>
+        <li>拡張機能による Cookie 設定</li>
+        <li>広告 ID</li>
+        <li>位置情報、連絡先、マイク、カメラ、各種センサー</li>
+      </ul>
+
+      <h2>通信</h2>
+      <p>本拡張自体は一切ネットワーク通信を行いません。当方および第三者のサーバーへの接続は行いません。同梱された静的リソース（アイコン、スクリプト、スタイル）のみで動作します。</p>
+      <p>補足: Chameleon 規約の CSS/JS ファイルは通常、ウェブページが <code>https://churin1116.github.io/html-chameleon/</code> から直接参照します。これらのリクエストはウェブページ自身がブラウザで発行するもので、本拡張は仲介・代行しません。</p>
+
+      <h2>権限と理由</h2>
+      <ul>
+        <li><strong><code>storage</code></strong> — 選択されたテーマをタブ間およびブラウザ再起動後も保持するため</li>
+        <li><strong><code>activeTab</code></strong> — ポップアップでテーマを選択した瞬間にアクティブタブへ即時反映するため</li>
+        <li><strong><code>scripting</code></strong> — Chameleon 対応ページにテーマ適用スクリプトを注入するため</li>
+        <li><strong><code>host_permissions: &lt;all_urls&gt;</code></strong> — Chameleon 対応 HTML ページは任意のドメイン（個人サイト、ドキュメント、ローカルファイル等）でホスト可能なため、どこにあっても検出・適用できる必要があります。本拡張は Chameleon シグナル（<code>&lt;meta name="chameleon"&gt;</code>、Chameleon スタイルシートリンク、<code>&lt;html data-chameleon&gt;</code>）を宣言したページにのみ作用し、それ以外のページでは何も行いません。</li>
+      </ul>
+
+      <h2>リモートコードの実行</h2>
+      <p>本拡張は実行時にリモートコードをロード・評価・取得しません。実行されるすべての JavaScript は Chrome ウェブストア配布パッケージに同梱されたものです。</p>
+
+      <h2>子どもについて</h2>
+      <p>本拡張は子ども向けではなく、子どもを含むいかなるユーザーからも個人データを収集しません。</p>
+
+      <h2>変更</h2>
+      <p>プライバシー慣行を変更する場合は、本ページを更新し、下部の日付を更新します。取り扱うデータに影響する重要な変更は、Chrome ウェブストアの掲載情報にも反映します。</p>
+
+      <h2>連絡先</h2>
+      <p>本ポリシーに関するお問い合わせ: <a href="mailto:nakabayashi991116@gmail.com">nakabayashi991116@gmail.com</a></p>
+      <p>ソースコード: <a href="https://github.com/churin1116/html-chameleon">github.com/churin1116/html-chameleon</a></p>
+    </section>
+
+    <p class="update-date">Last updated: 2026-05-10</p>
+  </main>
+</body>
+</html>
